@@ -1,0 +1,49 @@
+{
+    "quotes": [
+      {
+        "quote": "May the Force be with you.",
+        "correct_actor": "Mark Hamill",
+        "actors": [
+          "Harrison Ford",
+          "Mark Hamill",
+          "Carrie Fisher",
+          "Alec Guinness"
+        ],
+        "movie": "Star Wars"
+      },
+      {
+        "quote": "I'll be back.",
+        "correct_actor": "Arnold Schwarzenegger",
+        "actors": [
+          "Sylvester Stallone",
+          "Bruce Willis",
+          "Arnold Schwarzenegger",
+          "Jean-Claude Van Damme"
+        ],
+        "movie": "The Terminator"
+      },
+      {
+        "quote": "You can't handle the truth!",
+        "correct_actor": "Jack Nicholson",
+        "actors": [
+          "Al Pacino",
+          "Jack Nicholson",
+          "Tom Cruise",
+          "Morgan Freeman"
+        ],
+        "movie": "A Few Good Men"
+      },
+      {
+        "quote": "One does not simply walk into Mordor.",
+        "correct_actor": "Sean Bean",
+        "actors": [
+          "Ian McKellen",
+          "Sean Bean",
+          "Elijah Wood",
+          "Viggo Mortensen"
+        ],
+        "movie": "The Lord of the Rings: The Fellowship of the Ring"
+      }
+    ]
+  }
+  

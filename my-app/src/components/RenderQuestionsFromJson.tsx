@@ -16,6 +16,7 @@ const QuestionsAndAnswers = () => {
   const [data, setData] = useState<MovieQuotes| null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [correctAnswers, setCorrectAnswers] = useState<number>(0);
 
   useEffect(() => {
     // Accessed from public folder
@@ -42,13 +43,19 @@ const QuestionsAndAnswers = () => {
     return <div>Error</div>;
   }
 
+    // Handle correct answer
+    const handleCorrectAnswer = () => {
+      setCorrectAnswers(prevCount => prevCount + 1);
+    };
+
   const randomNum = Math.floor(Math.random() * (data?.quotes.length || 1))
 
   return (
     <div>
+      <h2>Number of Correct Answers: {correctAnswers}</h2>
       <h1>{data?.quotes[randomNum].movie}</h1>
       <h2>Quote : {data?.quotes[randomNum].quote}</h2>
-      <ActorButtons actors={data?.quotes[randomNum].actors || []} correctActor={data?.quotes[randomNum].correct_actor || "undefined"} />
+      <ActorButtons actors={data?.quotes[randomNum].actors || []} correctActor={data?.quotes[randomNum].correct_actor || "undefined"} onCorrectAnswer={handleCorrectAnswer}  />
     </div>
   );
 };

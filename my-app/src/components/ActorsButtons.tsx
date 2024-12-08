@@ -3,13 +3,14 @@ import React from 'react';
 interface ActorButtonsProps {
   actors: string[];
   correctActor: string; //actor to compare button press with
+  onCorrectAnswer: () => void;
 }
 
-const ActorButtons: React.FC<ActorButtonsProps> = ({ actors, correctActor }) => {
+const ActorButtons: React.FC<ActorButtonsProps> = ({ actors, correctActor, onCorrectAnswer }) => {
   const handleButtonClick = (actor: string) => {
     if (actor === correctActor) {
       alert("Correct! You selected the right actor.");
-      window.location.reload();
+      onCorrectAnswer();  // Increment the correct answer counter
     } else {
       alert("Incorrect. Try again!");
     }

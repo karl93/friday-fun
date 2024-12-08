@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import ActorButtons from './ActorsButtons';
+
+interface Quote {
+  quote: string;
+  correct_actor: string;
+  actors: string[];
+  movie: string;
+}
+
+interface MovieQuotes {
+  quotes: Quote[];
+}
 
 const QuestionsAndAnswers = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<MovieQuotes| null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -11,11 +23,12 @@ const QuestionsAndAnswers = () => {
     
     fetch(url)
       .then((response) => response.json())  // Parse the JSON data
-      .then((jsonData) => {
+      .then((jsonData: MovieQuotes) => {
         setData(jsonData);  // Store data in state
         setLoading(false);   // Stop loading
       })
       .catch((error) => {
+        console.log(error);
         setError(error);  // Handle error
         setLoading(false);
       });
@@ -29,10 +42,13 @@ const QuestionsAndAnswers = () => {
     return <div>Error</div>;
   }
 
+  const randomNum = Math.floor(Math.random() * (data?.quotes.length || 1))
+
   return (
     <div>
-      <h1>Loaded Data:</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre> {/* Pretty print JSON */}
+      <h1>{data?.quotes[randomNum].movie}</h1>
+      <h2>{data?.quotes[randomNum].quote}</h2>
+      <ActorButtons actors={data?.quotes[randomNum].actors || []} />
     </div>
   );
 };

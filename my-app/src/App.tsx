@@ -1,9 +1,6 @@
 import './App.css';
-import FridayFunTitle from './components/HelloWorld';
-import HelloWorld from './components/HelloWorld'
-import List from './components/List'
+import FridayFunTitle from './components/Title';
 import { FC } from 'react'
-import QuizQuote from './components/QuizQuote';
 import QuestionsAndAnswers from './components/RenderQuestionsFromJson';
 
 const App: FC = () => {

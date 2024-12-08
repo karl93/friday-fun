@@ -90,7 +90,7 @@
       },
       {
         "quote": "My precious.",
-        "correct_actor": "Gollum",
+        "correct_actor": "Andy Serkis",
         "actors": [
           "Andy Serkis",
           "Elijah Wood",
@@ -101,7 +101,7 @@
       },
       {
         "quote": "Fool of a Took! Throw yourself in next time, and rid us of your stupidity.",
-        "correct_actor": "Gandalf",
+        "correct_actor": "Ian McKellen",
         "actors": [
           "Ian McKellen",
           "Christopher Lee",

@@ -7,7 +7,7 @@
           "Harrison Ford",
           "Mark Hamill",
           "Carrie Fisher",
-          "Alec Guinness"
+          "Warwick Davies"
         ],
         "movie": "Star Wars"
       },
@@ -41,6 +41,72 @@
           "Sean Bean",
           "Elijah Wood",
           "Viggo Mortensen"
+        ],
+        "movie": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+        "quote": "I'm the king of the world!",
+        "correct_actor": "Leonardo DiCaprio",
+        "actors": [
+          "Brad Pitt",
+          "Johnny Depp",
+          "Leonardo DiCaprio",
+          "Matt Damon"
+        ],
+        "movie": "Titanic"
+      },
+      {
+        "quote": "Nobody puts Baby in a corner.",
+        "correct_actor": "Patrick Swayze",
+        "actors": [
+          "Patrick Swayze",
+          "Tom Cruise",
+          "Matthew McConaughey",
+          "Brad Pitt"
+        ],
+        "movie": "Dirty Dancing"
+      },
+      {
+        "quote": "Life is like a box of chocolates.",
+        "correct_actor": "Tom Hanks",
+        "actors": [
+          "Tom Hanks",
+          "Robert De Niro",
+          "Johnny Depp",
+          "Matt Damon"
+        ],
+        "movie": "Forrest Gump"
+      },
+      {
+        "quote": "Even the smallest person can change the course of the future.",
+        "correct_actor": "Cate Blanchett",
+        "actors": [
+          "Cate Blanchett",
+          "Liv Tyler",
+          "Miranda Otto",
+          "Eva Green"
+        ],
+        "movie": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+        "quote": "My precious.",
+        "correct_actor": "Gollum",
+        "actors": [
+          "Andy Serkis",
+          "Elijah Wood",
+          "Sean Bean",
+          "Christopher Lee"
+        ],
+        "movie": "The Lord of the Rings: The Two Towers"
+      },
+      {
+        "quote": "Fool of a Took! Throw yourself in next time, and rid us of your stupidity.",
+        "correct_actor": "Gandalf",
+        "actors": [
+          "Ian McKellen",
+          "Christopher Lee",
+          "Hugo Weaving",
+          "John Noble"
         ],
         "movie": "The Lord of the Rings: The Fellowship of the Ring"
       }

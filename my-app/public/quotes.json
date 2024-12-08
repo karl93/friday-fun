@@ -6,7 +6,7 @@
         "actors": [
           "Harrison Ford",
           "Mark Hamill",
-          "Carrie Fisher",
+          "Kenny Baker",
           "Warwick Davies"
         ],
         "movie": "Star Wars"
@@ -109,6 +109,39 @@
           "John Noble"
         ],
         "movie": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+        "quote": "Why so serious?",
+        "correct_actor": "Heath Ledger",
+        "actors": [
+          "Heath Ledger",
+          "Christian Bale",
+          "Jared Leto",
+          "Jack Nicholson"
+        ],
+        "movie": "The Dark Knight"
+      },
+      {
+        "quote": "I'm going to make him an offer he can't refuse.",
+        "correct_actor": "Marlon Brando",
+        "actors": [
+          "Marlon Brando",
+          "Al Pacino",
+          "James Caan",
+          "Robert De Niro"
+        ],
+        "movie": "The Godfather"
+      },
+      {
+        "quote": "To infinity and beyond!",
+        "correct_actor": "Tim Allen",
+        "actors": [
+          "Tom Hanks",
+          "Tim Allen",
+          "Chris Pratt",
+          "John C. Reilly"
+        ],
+        "movie": "Toy Story"
       }
     ]
   }

@@ -47,8 +47,8 @@ const QuestionsAndAnswers = () => {
   return (
     <div>
       <h1>{data?.quotes[randomNum].movie}</h1>
-      <h2>{data?.quotes[randomNum].quote}</h2>
-      <ActorButtons actors={data?.quotes[randomNum].actors || []} />
+      <h2>Quote : {data?.quotes[randomNum].quote}</h2>
+      <ActorButtons actors={data?.quotes[randomNum].actors || []} correctActor={data?.quotes[randomNum].correct_actor || "undefined"} />
     </div>
   );
 };
